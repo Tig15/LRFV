@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&family=Sofia+Sans+Condensed:wght@300&display=swap");
+body {
+  background: linear-gradient(to right, #584436b8, #deae5b7d);
+}
+#form-flow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+}
+.form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 240px;
+  gap: 1.2rem;
+}
+fieldset {
+  border: 4px solid #3c2a2182;
+  border-radius: 10px;
+  padding: 40px;
+}
+legend {
+  text-align: center;
+  font-weight: 700;
+  color: #492d1f;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 8px;
+}
+#wes {
+  margin: 6px;
+  border: transparent;
+  background-color: transparent;
+  border-bottom: 2px solid #945f398f;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#wes::placeholder {
+  color: #54422d;
+  font-weight: 200;
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+}
+input:focus {
+  outline: none;
+}
+input {
+  caret-color: rgb(249, 249, 249);
+  color: rgb(18, 15, 15);
+  font-weight: 900;
+}
+h2 {
+  text-align: center;
+  font-weight: 200;
+  font-family: "Mukta", sans-serif;
+  color: #431b07c8;
+}
+span {
+  color: #4c2d09f1;
+  font-weight: 200;
+}
+#btn {
+  background-color: transparent;
+  border: 1px solid rgba(139, 69, 19, 0.455);
+  border-radius: 7px;
+  padding: 4px;
+  margin-top: 35px;
+  position: absolute;
+  top: 600px;
+  left: 935px;
+  cursor: pointer;
+  transition: transform 2s linear ease;
+  font-family: "Mukta", sans-serif;
+}
+#btn:hover {
+  background-color: #4c361cb0;
+  color: white;
+  transform: scale(1.3);
+}
+
+/* Error message */
+small {
+  color: #e01111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+/* Applied with JS */
+.form-control.error small {
+  visibility: visible;
+}
